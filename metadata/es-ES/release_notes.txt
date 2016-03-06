@@ -1,0 +1,3 @@
+Actualizado interfaz de configuración
+Soporte para nuevos idiomas
+Opción para evitar los anuncios integrados

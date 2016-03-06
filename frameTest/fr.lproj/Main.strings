@@ -1,0 +1,42 @@
+/* Class = "UILabel"; text = "Video Frame Rate"; ObjectID = "1tn-pB-tPu"; */
+"1tn-pB-tPu.text" = "Taux de Trame Vidéo";
+
+/* Class = "UIButton"; normalTitle = "Remove Ads"; ObjectID = "5q2-z6-m0P"; */
+"5q2-z6-m0P.normalTitle" = "Supprimez la pub";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "6PS-iU-a7o"; */
+"6PS-iU-a7o.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "9TW-bc-90V"; */
+"9TW-bc-90V.text" = "Temps";
+
+/* Class = "UIButton"; normalTitle = "<<"; ObjectID = "Ir1-ao-0Ir"; */
+"Ir1-ao-0Ir.normalTitle" = "<<";
+
+/* Class = "UIButton"; normalTitle = "Restore Purchases"; ObjectID = "YPo-i1-art"; */
+"YPo-i1-art.normalTitle" = "Restaurer Achats";
+
+/* Class = "UITextField"; placeholder = "Frame Interval"; ObjectID = "jWH-3b-U3a"; */
+"jWH-3b-U3a.placeholder" = "Intervalle de Trame";
+
+/* Class = "UIButton"; normalTitle = ">>"; ObjectID = "kJB-SZ-RVL"; */
+"kJB-SZ-RVL.normalTitle" = ">>";
+
+/* Class = "UIButton"; normalTitle = ">"; ObjectID = "mdb-Rc-AQd"; */
+"mdb-Rc-AQd.normalTitle" = ">";
+
+/* Class = "UITextField"; placeholder = "Frame Multiplier"; ObjectID = "nWR-Xo-0gI"; */
+"nWR-Xo-0gI.placeholder" = "Cadre multiplicateur";
+
+/* Class = "UISegmentedControl"; qUC-Yx-Mdx.segmentTitles[0] = "30 FPS"; ObjectID = "qUC-Yx-Mdx"; */
+"qUC-Yx-Mdx.segmentTitles[0]" = "30 IPS";
+
+/* Class = "UISegmentedControl"; qUC-Yx-Mdx.segmentTitles[1] = "120 FPS"; ObjectID = "qUC-Yx-Mdx"; */
+"qUC-Yx-Mdx.segmentTitles[1]" = "120 IPS";
+
+/* Class = "UISegmentedControl"; qUC-Yx-Mdx.segmentTitles[2] = "Custom FPS"; ObjectID = "qUC-Yx-Mdx"; */
+"qUC-Yx-Mdx.segmentTitles[2]" = "Coutume IPS";
+
+/* Class = "UIBarButtonItem"; title = "Choose Clip"; ObjectID = "rfh-dB-uIv"; */
+"rfh-dB-uIv.title" = "Choisissez Elément";
+

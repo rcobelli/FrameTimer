@@ -1,0 +1,3 @@
+Mise à jour des paramètres d'interface
+Soutien à de nouvelles langues
+Option pour supprimer les publicités intégré
