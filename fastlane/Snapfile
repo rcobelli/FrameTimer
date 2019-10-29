@@ -1,0 +1,26 @@
+# Uncomment the lines below you want to change by removing the # in the beginning
+
+# A list of devices you want to take the screenshots from
+devices([
+  "iPhone 8 Plus",
+  "iPhone 11 Pro Max",
+  "iPad Pro (12.9-inch)",
+  "iPad Pro (12.9-inch) (3rd generation)",
+])
+
+languages([
+  "en-US"
+])
+
+app_identifier "com.rybel-llc.frame-counter"
+
+scheme "FrameTime"
+
+reinstall_app true
+
+clear_previous_screenshots true
+
+stop_after_first_error true
+
+# For more information about all available options run
+# snapshot --help

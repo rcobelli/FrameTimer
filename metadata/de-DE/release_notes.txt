@@ -1,3 +1,0 @@
-Aktualisiert Einstellungen Schnittstelle
-Unterstützung für neue Sprachen
-Option, um Anzeigen zu entfernen integriert

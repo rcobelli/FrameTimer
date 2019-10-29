@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-FrameTime-FrameTimeUITests/Pods-FrameTime-FrameTimeUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FDWaveformView/FDWaveformView.framework
+${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework

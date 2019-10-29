@@ -1,3 +1,0 @@
-Updated settings interface
-Support for new languages
-Option to remove ads integrated
