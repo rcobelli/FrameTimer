@@ -88,7 +88,7 @@ class AnalyzeViewController: UIViewController {
 			} else {
 				waveFormView.wavesColor = UIColor.black
 			}
-			waveFormView.progressColor = UIColor.systemTeal
+			waveFormView.progressColor = UIColor.systemBlue
 			
 			firstCall = false
 			

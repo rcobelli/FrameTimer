@@ -27,9 +27,14 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	@IBOutlet weak var goButton: UIButton! {
 		didSet {
+			if (!ProcessInfo.processInfo.arguments.contains("testing")) {
+				goButton.alpha = 0.5
+				goButton.isEnabled = false
+			} else {
+				goButton.alpha = 1.0
+				goButton.isEnabled = true
+			}
 			goButton.layer.cornerRadius = 10
-			goButton.alpha = 0.5
-			goButton.isEnabled = false
 		}
 	}
 
@@ -75,7 +80,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	
 	@IBAction func fpsCheck(sender: Any) {
-		let alertController = UIAlertController(title: "FPS Explained", message: "To determine what FPS you are filming at, please go to Settings > Camera. Here you will find your settings and what FPS you are filming at. Please take notice that Video and Slo-mo record at different frame rates!", preferredStyle: .alert)
+		let alertController = UIAlertController(title: "FPS Explained", message: "To determine what FPS (frames per second) you are filming at, please go to Settings > Camera. Here you will find your settings and what FPS you are filming at. Please note that Video and Slo-mo record at different frame rates!", preferredStyle: .alert)
 		let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
 		alertController.addAction(action)
 		self.present(alertController, animated: true, completion: nil)
@@ -106,6 +111,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	
 	func galleryControllerDidCancel(_ controller: GalleryController) {
+		self.spinner.removeFromSuperview()
 		controller.dismiss(animated: true, completion: nil)
 	}
 	

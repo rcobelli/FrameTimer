@@ -9,11 +9,4 @@ target 'FrameTime' do
   # Pods for FrameTime
   pod 'Gallery'
   pod 'FDWaveformView'
-
-
-
-  target 'FrameTimeUITests' do
-    # Pods for testing
-  end
-
 end

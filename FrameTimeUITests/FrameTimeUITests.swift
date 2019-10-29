@@ -24,11 +24,10 @@ class FrameTimeUITests: XCTestCase {
     }
 
     func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+		snapshot("01-home")
+		
+		let goButton = XCUIApplication().buttons["Go!"]
+		goButton.tap()
+		snapshot("00-analysis")		
     }
 }
