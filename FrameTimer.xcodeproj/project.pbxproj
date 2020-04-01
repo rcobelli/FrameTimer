@@ -46,7 +46,7 @@
 		94AB6D2323675B75001FE360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94AB6D2623675B76001FE360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94AB6D2823675B76001FE360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94AB6D2D23675B76001FE360 /* FrameTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AB6D2D23675B76001FE360 /* FrameTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AB6D3123675B76001FE360 /* FrameTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTimeUITests.swift; sourceTree = "<group>"; };
 		94AB6D3323675B76001FE360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94AB6D3C23675C49001FE360 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				94AB6D1723675B73001FE360 /* Frame Timer.app */,
-				94AB6D2D23675B76001FE360 /* FrameTimeUITests.xctest */,
+				94AB6D2D23675B76001FE360 /* FrameTimerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94AB6D1623675B73001FE360 /* FrameTime */ = {
+		94AB6D1623675B73001FE360 /* FrameTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94AB6D3623675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTime" */;
+			buildConfigurationList = 94AB6D3623675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimer" */;
 			buildPhases = (
 				E9A1DDD6A4B224FD1496C339 /* [CP] Check Pods Manifest.lock */,
 				94AB6D1323675B73001FE360 /* Sources */,
@@ -158,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = FrameTime;
+			name = FrameTimer;
 			productName = FrameTime;
 			productReference = 94AB6D1723675B73001FE360 /* Frame Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		94AB6D2C23675B76001FE360 /* FrameTimeUITests */ = {
+		94AB6D2C23675B76001FE360 /* FrameTimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94AB6D3923675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimeUITests" */;
+			buildConfigurationList = 94AB6D3923675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimerUITests" */;
 			buildPhases = (
 				94AB6D2923675B76001FE360 /* Sources */,
 				94AB6D2A23675B76001FE360 /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				94AB6D2F23675B76001FE360 /* PBXTargetDependency */,
 			);
-			name = FrameTimeUITests;
+			name = FrameTimerUITests;
 			productName = FrameTimeUITests;
-			productReference = 94AB6D2D23675B76001FE360 /* FrameTimeUITests.xctest */;
+			productReference = 94AB6D2D23675B76001FE360 /* FrameTimerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94AB6D1223675B73001FE360 /* Build configuration list for PBXProject "FrameTime" */;
+			buildConfigurationList = 94AB6D1223675B73001FE360 /* Build configuration list for PBXProject "FrameTimer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,8 +213,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94AB6D1623675B73001FE360 /* FrameTime */,
-				94AB6D2C23675B76001FE360 /* FrameTimeUITests */,
+				94AB6D1623675B73001FE360 /* FrameTimer */,
+				94AB6D2C23675B76001FE360 /* FrameTimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,7 +311,7 @@
 /* Begin PBXTargetDependency section */
 		94AB6D2F23675B76001FE360 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94AB6D1623675B73001FE360 /* FrameTime */;
+			target = 94AB6D1623675B73001FE360 /* FrameTimer */;
 			targetProxy = 94AB6D2E23675B76001FE360 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -535,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94AB6D1223675B73001FE360 /* Build configuration list for PBXProject "FrameTime" */ = {
+		94AB6D1223675B73001FE360 /* Build configuration list for PBXProject "FrameTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94AB6D3423675B76001FE360 /* Debug */,
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94AB6D3623675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTime" */ = {
+		94AB6D3623675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94AB6D3723675B76001FE360 /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94AB6D3923675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimeUITests" */ = {
+		94AB6D3923675B76001FE360 /* Build configuration list for PBXNativeTarget "FrameTimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94AB6D3A23675B76001FE360 /* Debug */,
