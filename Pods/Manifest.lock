@@ -1,5 +1,5 @@
 PODS:
-  - FDWaveformView (4.0.0)
+  - FDWaveformView (5.0.1)
   - Gallery (2.2.2)
 
 DEPENDENCIES:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Gallery
 
 SPEC CHECKSUMS:
-  FDWaveformView: b499c71c154992cee41b543ff00916a8882e696b
+  FDWaveformView: c188be613947273cc83d6f0056505f60e6c4b9ac
   Gallery: 634ea7d58b93fcb8e787a846febac73ec354e7d9
 
-PODFILE CHECKSUM: 604bcf80fd9d1f8e6a7877a65cea358cfd32f6e8
+PODFILE CHECKSUM: 5b67111ea2d38b2f4c657b9b531d97fbdb26cda5
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

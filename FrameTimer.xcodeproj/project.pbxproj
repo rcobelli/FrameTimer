@@ -20,7 +20,7 @@
 		94AB6D3D23675C49001FE360 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB6D3C23675C49001FE360 /* AnalyzeViewController.swift */; };
 		94AB6D3F236760A8001FE360 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB6D3E236760A8001FE360 /* VideoView.swift */; };
 		94AB6D412367D8D7001FE360 /* rybel_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AB6D402367D8D7001FE360 /* rybel_logo.png */; };
-		A617FD1208AE0E72BB5E6F0E /* Pods_FrameTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24D1B5BD3C079B2A242ED31 /* Pods_FrameTime.framework */; };
+		C0E3DC1FFF60F7BD1F43BB1D /* Pods_FrameTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9456AD3BB559FFFC12635DE1 /* Pods_FrameTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37FB9B3292BC778B169C3295 /* Pods-FrameTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameTimer.debug.xcconfig"; path = "Target Support Files/Pods-FrameTimer/Pods-FrameTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		8F49A7B8C1CF63CBECBD5994 /* Pods-FrameTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameTime.release.xcconfig"; path = "Target Support Files/Pods-FrameTime/Pods-FrameTime.release.xcconfig"; sourceTree = "<group>"; };
 		941FC3D22367DD1A00A8C4BB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		941FC3D42367DDCB00A8C4BB /* demo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = demo.MOV; sourceTree = "<group>"; };
 		941FC3D6236870F000A8C4BB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		9456AD3BB559FFFC12635DE1 /* Pods_FrameTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AB6D1723675B73001FE360 /* Frame Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frame Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AB6D1A23675B73001FE360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94AB6D1C23675B73001FE360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +54,8 @@
 		94AB6D3C23675C49001FE360 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		94AB6D3E236760A8001FE360 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		94AB6D402367D8D7001FE360 /* rybel_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rybel_logo.png; sourceTree = "<group>"; };
-		A24D1B5BD3C079B2A242ED31 /* Pods_FrameTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B94728457C2E14A2960AB8 /* Pods-FrameTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameTime.debug.xcconfig"; path = "Target Support Files/Pods-FrameTime/Pods-FrameTime.debug.xcconfig"; sourceTree = "<group>"; };
+		D9B00B973843EBAFDB01486F /* Pods-FrameTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameTimer.release.xcconfig"; path = "Target Support Files/Pods-FrameTimer/Pods-FrameTimer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A617FD1208AE0E72BB5E6F0E /* Pods_FrameTime.framework in Frameworks */,
+				C0E3DC1FFF60F7BD1F43BB1D /* Pods_FrameTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,8 @@
 			children = (
 				C0B94728457C2E14A2960AB8 /* Pods-FrameTime.debug.xcconfig */,
 				8F49A7B8C1CF63CBECBD5994 /* Pods-FrameTime.release.xcconfig */,
+				37FB9B3292BC778B169C3295 /* Pods-FrameTimer.debug.xcconfig */,
+				D9B00B973843EBAFDB01486F /* Pods-FrameTimer.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,7 +140,7 @@
 		C71B583D8268450166F6DCE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A24D1B5BD3C079B2A242ED31 /* Pods_FrameTime.framework */,
+				9456AD3BB559FFFC12635DE1 /* Pods_FrameTimer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +157,7 @@
 				94AB6D1423675B73001FE360 /* Frameworks */,
 				94AB6D1523675B73001FE360 /* Resources */,
 				28F1ABB52A3821D0A679B506 /* [CP] Embed Pods Frameworks */,
+				94F4AF6E245CE889009139E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,16 +254,33 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrameTime/Pods-FrameTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FrameTimer/Pods-FrameTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrameTime/Pods-FrameTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FrameTimer/Pods-FrameTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrameTime/Pods-FrameTime-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrameTimer/Pods-FrameTimer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		94F4AF6E245CE889009139E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n\tswiftlint\nelse\n\techo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		E9A1DDD6A4B224FD1496C339 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -275,7 +297,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FrameTime-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FrameTimer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,7 +474,7 @@
 		};
 		94AB6D3723675B76001FE360 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0B94728457C2E14A2960AB8 /* Pods-FrameTime.debug.xcconfig */;
+			baseConfigurationReference = 37FB9B3292BC778B169C3295 /* Pods-FrameTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,7 +496,7 @@
 		};
 		94AB6D3823675B76001FE360 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F49A7B8C1CF63CBECBD5994 /* Pods-FrameTime.release.xcconfig */;
+			baseConfigurationReference = D9B00B973843EBAFDB01486F /* Pods-FrameTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
