@@ -13,7 +13,7 @@ import AVKit
 
 class ViewController: UIViewController, GalleryControllerDelegate {
 	
-	var videoURL : URL?
+	var videoURL: URL?
 	
 	var spinner = UIActivityIndicatorView()
 	
@@ -27,7 +27,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	@IBOutlet weak var goButton: UIButton! {
 		didSet {
-			if (!ProcessInfo.processInfo.arguments.contains("testing")) {
+			if !ProcessInfo.processInfo.arguments.contains("testing") {
 				goButton.alpha = 0.5
 				goButton.isEnabled = false
 			} else {
@@ -43,7 +43,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		if (ProcessInfo.processInfo.arguments.contains("testing")) {
+		if ProcessInfo.processInfo.arguments.contains("testing") {
 			videoURL = Bundle.main.url(forResource: "demo", withExtension: "MOV")
 			fpsSelector.selectedSegmentIndex = 0
 		}
@@ -51,7 +51,9 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "analyzeVideo" {
-			let destVC = segue.destination as! AnalyzeViewController
+			guard let destVC = segue.destination as? AnalyzeViewController else {
+				return
+			}
 			destVC.videoPath = videoURL
 			destVC.fps = getFPSforIndex(index: fpsSelector.selectedSegmentIndex)
 		}
@@ -80,10 +82,14 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	
 	@IBAction func fpsCheck(sender: Any) {
-		let alertController = UIAlertController(title: "FPS Explained", message: "To determine what FPS (frames per second) you are filming at, please go to Settings > Camera. Here you will find your settings and what FPS you are filming at. Please note that Video and Slo-mo record at different frame rates!", preferredStyle: .alert)
+		// swiftlint:disable line_length
+		let alertController = UIAlertController(title: "FPS Explained",
+												message: "To determine what FPS (frames per second) you are filming at, please go to Settings > Camera. Here you will find your settings and what FPS you are filming at. Please note that Video and Slo-mo record at different frame rates!",
+												preferredStyle: .alert)
 		let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
 		alertController.addAction(action)
 		self.present(alertController, animated: true, completion: nil)
+		// swiftlint:enable line_length
 	}
 	
 	@IBAction func start(sender: Any) {
@@ -98,7 +104,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	  controller.dismiss(animated: true, completion: nil)
 
 	  let editor = VideoEditor()
-	  editor.edit(video: video) { (editedVideo: Video?, tempPath: URL?) in
+	  editor.edit(video: video) { (_: Video?, tempPath: URL?) in
 		DispatchQueue.main.async {
 		  if let tempPath = tempPath {
 			self.videoURL = tempPath
@@ -120,7 +126,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	func galleryController(_ controller: GalleryController, requestLightbox images: [Image]) {}
 	
 	func getFPSforIndex(index: Int) -> Int {
-		switch (index) {
+		switch index {
 		case 0:
 			return 240
 		case 1:
@@ -135,4 +141,3 @@ class ViewController: UIViewController, GalleryControllerDelegate {
 	}
 	
 }
-

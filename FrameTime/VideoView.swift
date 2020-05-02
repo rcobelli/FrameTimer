@@ -29,7 +29,10 @@ class VideoView: UIView {
 		if let playerLayer = self.playerLayer {
 			layer.addSublayer(playerLayer)
 		}
-		NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(reachTheEndOfTheVideo(_:)),
+											   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+											   object: self.player?.currentItem)
     }
     
     func play() {

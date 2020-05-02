@@ -12,12 +12,12 @@ import FDWaveformView
 
 class AnalyzeViewController: UIViewController {
 	
-	var videoPath : URL?
+	var videoPath: URL?
 	var fps = 0
 	var fpsHZ = 0.0
-	var playbackRate : Float = 0.0
+	var playbackRate: Float = 0.0
 	
-	var player : AVPlayer?
+	var player: AVPlayer?
 	var currentTime = 0.0
 	var duration = 0.0
 	
@@ -101,7 +101,6 @@ class AnalyzeViewController: UIViewController {
 		prevFrameTimer.invalidate()
 	}
 	
-	
 	// MARK: Keyframe Action
 	
 	@IBAction func addKeyFrame(sender: Any) {
@@ -118,11 +117,15 @@ class AnalyzeViewController: UIViewController {
 		}
 	}
 	
-	// MARK:  Next Frame Actions
+	// MARK: Next Frame Actions
 	
 	@IBAction func nextFrameDown(sender: Any) {
 		nextFrame()
-		nextFrameTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(nextFrame), userInfo: nil, repeats: true)
+		nextFrameTimer = Timer.scheduledTimer(timeInterval: 0.05,
+											  target: self,
+											  selector: #selector(nextFrame),
+											  userInfo: nil,
+											  repeats: true)
 	}
 	
 	@IBAction func nextFrameUp(sender: Any) {
@@ -144,7 +147,11 @@ class AnalyzeViewController: UIViewController {
 	
 	@IBAction func prevFrameDown(sender: Any) {
 		prevFrame()
-		prevFrameTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(prevFrame), userInfo: nil, repeats: true)
+		prevFrameTimer = Timer.scheduledTimer(timeInterval: 0.05,
+											  target: self,
+											  selector: #selector(prevFrame),
+											  userInfo: nil,
+											  repeats: true)
 	}
 	
 	@IBAction func prevFrameUp(sender: Any) {
@@ -182,7 +189,6 @@ class AnalyzeViewController: UIViewController {
 		currentTime = Double(frame) * fpsHZ
 		duration = (player?.currentItem!.duration.seconds)! * fpsHZ * Double(playbackRate)
 	}
-	
 	
 	func updateButtons() {
 		if traitCollection.userInterfaceStyle == .dark {
